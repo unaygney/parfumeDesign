@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+   
+}
+
+.container .left-side {
+    width: 50%;
+    height: 500px;
+
+}
+
+.left-side img {
+    width: 100%;
+    height: 100%;
+    background: center / cover no-repeat;
+    border-radius: 8px 0 0 8px;
+    object-fit: cover;
+}
+
+.container .right-side{
+    display: flex;
+    padding: 40px;
+    width: 50%;
+}
+
+.right-side span{
+    color:gray;
+    letter-spacing: 2px;
+   
+}
+
+.right-side h1{
+    font-family: 'Fraunces', serif;
+    padding: 20px 0;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.right-side p{
+    line-height: 1.7rem;
+    font-size: 14px;
+    margin-bottom: 30px;
+    color:gray;
+}
+
+.right-side .price{
+    color: #597454;
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+  
+
+}
+
+.right-side .old-price{
+    font-family: 'Fraunces', serif;
+    font-size: 14px;
+    text-decoration: line-through;
+    color:gray;
+    
+ 
+
+}
+
+button{
+    width: 200px;
+    height: 35px;
+    border: 0;
+    background-color:#597454;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+
+}
+
+button:hover{
+    opacity: 0.7;
+
+}
+button:active{
+    transform: scale(0.98);
+}
+
+
+
+
+@media (max-width: 575px) {
+
+    body{
+       margin: 20px;
+    }
+    .container{
+        flex-direction: column;
+        height: 95vh;
+        
+        
+    }
+    .container .left-side{
+        width: 100%;
+        height: 40%;
+
+    }
+
+
+    .left-side img{
+        background-image: url(./images/image-product-mobile.jpg);
+        background: center / cover no-repeat;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+
+
+
+
+
+  }
